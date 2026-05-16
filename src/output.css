@@ -554,6 +554,11 @@ video {
   display: none;
 }
 
+.bg-red-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 27 27 / var(--tw-bg-opacity, 1));
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
