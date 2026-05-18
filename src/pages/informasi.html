@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifikasi Informasi</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+
+    <div class="w-full max-w-[390px] min-h-screen bg-white shadow-2xl overflow-hidden mx-auto">
+        
+        <div class="p-4 flex justify-between items-center bg-white border-b border-gray-100">
+            <div class="flex items-center gap-2">
+                <img>
+                <div>
+                    <img src="img/logo smk.png" width="35px" height="45px">
+                </div>
+                <div>
+                    <h1 class="text-xs font-bold text-gray-800 leading-tight">SMK NEGERI</h1>
+                    <p class="text-xs font-bold text-gray-800 leading-tight">3 BANJAR</p>
+                </div>
+            </div>
+            <div class="flex gap-4 text-gray-600 text-center">
+                <button class="flex flex-col items-center">
+                    <i class="fa-regular fa-clipboard text-lg"></i>
+                    <span class="text-[10px] font-medium mt-1">Riwayat</span>
+                </button>
+                <button class="flex flex-col items-center text-blue-600 relative">
+                    <i class="fa-regular fa-bell text-lg"></i>
+                    <span class="text-[10px] font-semibold mt-1">Notifikasi</span>
+                    <span class="absolute top-0 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
+                </button>
+                <button class="flex flex-col items-center">
+                    <div class="w-5 h-5 rounded-full overflow-hidden">
+                        <img src="img/profile.png" alt="Profile" class="w-full h-full object-cover">
+                    </div>
+                    <span class="text-[10px] font-medium mt-1">Profile</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="flex-1 p-4 bg-gray-50/50">
+            <div class="flex items-center gap-4 mb-6">
+                <button class="text-gray-700 text-lg">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <h2 class="text-lg font-bold text-gray-800 mx-auto pr-6">Notifikasi</h2>
+            </div>
+
+            <div class="flex justify-around bg-gray-100/80 p-1 rounded-full mb-6 text-sm font-semibold text-gray-500">
+                <button class="py-2 px-4 rounded-full "><a href="notifikasi.html">Semua</a></button>
+                <button class="py-2 px-6 rounded-full"><a href="pengajuan.html">Pengajuan</a></button>
+                <button class="py-2 px-4 rounded-full bg-pink-100 text-pink-600 shadow-sm">Informasi</button>
+            </div>
+
+            <div class="bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50 rounded-2xl p-5 border border-purple-100/50 shadow-sm relative">
+
+        <!-- CARD INFORMASI -->
+        <div class="bg-[#ebe8ff] rounded-lg p-4 relative mb-6">
+            <div class="space-y-6">
+                <!-- ITEM 1 -->
+                <div class="flex items-start gap-4">
+                    <div class="text-blue-600 text-2xl mt-1">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <p class="text-sm text-gray-700 leading-relaxed w-[210px]">
+                        Pengajuan sedang menunggu persetujuan dari guru BK / Wali kelas.
+                    </p>
+
+                </div>
+                <!-- ITEM 2 -->
+                <div class="flex items-start gap-4">
+                    <div class="text-blue-600 text-2xl mt-1">
+                        <i class="fa-regular fa-bell"></i>
+                    </div>
+                    <p class="text-sm text-gray-700 leading-relaxed w-[210px]">
+                        Kamu akan mendapatkan notifikasi jika pengajuan sudah diproses.
+                    </p>
+                </div>
+
+                <!-- ITEM 3 -->
+                <div class="flex items-start gap-4">
+                    <div class="text-blue-600 text-2xl mt-1">
+                        <i class="fa-regular fa-circle-check"></i>
+                    </div>
+                    <p class="text-sm text-gray-700 leading-relaxed w-[210px]">
+                        Pastikan semua informasi yang kamu isi sudah benar.
+                    </p>
+                </div>
+            </div>
+            </div>
+        <!-- CARD BAWAH -->
+        <div class="bg-white rounded-2xl shadow-sm p-4 flex items-center gap-4">
+            <div class="w-11 h-11 rounded-xl bg-pink-100 flex items-center justify-center">
+                <i class="fa-regular fa-lightbulb text-pink-500 text-xl"></i>
+            </div>
+            <p class="text-[11px] text-gray-500 leading-relaxed flex-1">
+                Jika ada kesalahan informasi, silahkan batalkan dan ajukan ulang pengajuan izin.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

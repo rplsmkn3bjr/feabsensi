@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifikasi Semua</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+
+    <div class="w-full max-w-[390px] min-h-screen bg-white shadow-2xl overflow-hidden mx-auto">
+        <div class="p-4 flex justify-between items-center bg-white border-b border-gray-100">
+            <div class="flex items-center gap-2">
+                <img>
+                <div>
+                    <img src="img/logo smk.png" width="35px" height="45px">
+                </div>
+                <div>
+                    <h1 class="text-xs font-bold text-gray-800 leading-tight">SMK NEGERI</h1>
+                    <p class="text-xs font-bold text-gray-800 leading-tight">3 BANJAR</p>
+                </div>
+            </div>
+            <div class="flex gap-4 text-gray-600 text-center">
+                <button class="flex flex-col items-center">
+                    <i class="fa-regular fa-clipboard text-lg"></i>
+                    <span class="text-[10px] font-medium mt-1">Riwayat</span>
+                </button>
+                <button class="flex flex-col items-center text-blue-600 relative">
+                    <i class="fa-regular fa-bell text-lg"></i>
+                    <span class="text-[10px] font-semibold mt-1">Notifikasi</span>
+                    <span class="absolute top-0 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
+                </button>
+                <button class="flex flex-col items-center">
+                    <div class="w-5 h-5 rounded-full overflow-hidden">
+                        <img src="img/profile.png" alt="Profile" class="w-full h-full object-cover">
+                    </div>
+                    <span class="text-[10px] font-medium mt-1">Profile</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="flex-1 p-4 bg-gray-50/50">
+            <div class="flex items-center gap-4 mb-6">
+                <button class="text-gray-700 text-lg">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <h2 class="text-lg font-bold text-gray-800 mx-auto pr-6">Notifikasi</h2>
+            </div>
+
+            <div class="flex justify-around bg-gray-100/80 p-1 rounded-full mb-6 text-sm font-semibold text-gray-500">
+                <button class="py-2 px-4 rounded-full  bg-pink-100 text-pink-600 shadow-sm">Semua</button>
+                <button class="py-2 px-6 rounded-full"><a href="pengajuan.html">Pengajuan</a></button>
+                <button class="py-2 px-4 rounded-full"><a href="informasi.html">Informasi</a></button>
+            </div>
+
+            <div class="bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50 rounded-2xl p-5 border border-purple-100/50 shadow-sm relative">
+        <!-- CARD 1 -->
+        <div class="bg-white rounded-lg shadow-md p-4 mb-4">
+            <div class="flex gap-4">
+                <div class="w-15 h-15 rounded-full bg-blue-100 flex items-center justify-center">
+                    <div class="w-10 h-10 rounded-full border-4 border-blue-500 flex items-center justify-center">
+                        <i class="fa-solid fa-check text-blue-500 text-lg"></i>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold text-[15px] text-gray-800">
+                        Pengajuan Izin Disetujui
+                    </h3>
+                    <p class="text-[13px] text-gray-500 leading-relaxed mt-1">
+                        Pengajuan Izin Anda untuk tanggal
+                        15-16 Mei 2026 telah disetujui,
+                    </p>
+                    <p class="text-[11px] text-gray-500 mt-4">
+                        13 Mei 2026, 09:45
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="bg-white rounded-lg shadow-md p-4 mb-4">
+            <div class="flex gap-4">
+                <div class="w-14 h-14 rounded-full bg-pink-100 flex items-center justify-center">
+                    <i class="fa-solid fa-bullhorn text-pink-500 text-3xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-[15px] text-gray-800">
+                        Pengumuman Sekolah
+                    </h3>
+                    <p class="text-[13px] text-gray-500 leading-relaxed mt-1">
+                        Ujian Akhir Semester akan berlangsung
+                        18-22 Juni 2026,
+                    </p>
+                    <p class="text-[11px] text-gray-500 mt-4">
+                        8 Mei 2026, 08:00
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="bg-white rounded-lg shadow-md p-4 mb-4">
+            <div class="flex gap-4">
+                <div class="w-14 h-14 rounded-full bg-orange-100 flex items-center justify-center">
+                    <div class="w-10 h-10 rounded-full border-4 border-orange-500 flex items-center justify-center">
+                        <i class="fa-solid fa-xmark text-orange-500 text-lg"></i>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold text-[15px] text-gray-800">
+                        Pengajuan Izin Ditolak
+                    </h3>
+                    <p class="text-[13px] text-gray-500 leading-relaxed mt-1">
+                        Pengajuan Izin Anda untuk tanggal
+                        20 Mei 2026 telah ditolak,
+                    </p>
+                    <p class="text-[11px] text-gray-500 mt-4">
+                        17 Mei 2026, 10:35
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="bg-white rounded-lg shadow-md p-4">
+            <div class="flex gap-4">
+                <div class="w-14 h-14 rounded-full bg-purple-100 flex items-center justify-center">
+                    <i class="fa-regular fa-calendar-days text-purple-500 text-3xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-[15px] text-gray-800">
+                        Libur Sekolah
+                    </h3>
+                    <p class="text-[13px] text-gray-500 leading-relaxed mt-1">
+                        Sekolah akan libur pada tanggal
+                        31-10 Juni 2026,
+                    </p>
+                    <p class="text-[11px] text-gray-500 mt-4">
+                        25 Juni 2026, 11:00
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+</html>
