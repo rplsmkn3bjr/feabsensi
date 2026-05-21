@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../output.css" rel="stylesheet">
+  <style>
+    p{
+        color : rgb(17 24 39);
+        margin: 0px;
+        padding: 0px;
+        font-size: 14px;
+        font-family: 'inter', sans-serif;
+    }
+  </style>  
+</head>
+<body class="m-0 p-0 bg-[#f0f0f0]">
+    <div class="min-h-screen w-full flex flex-col ">
+
+        <!-- title -->
+        <div class="h-auto flex justify-between box-border items-center px-5 pt-5 ">
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi text-gray-900 bi-arrow-left hover:border-pink-700" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                </svg>
+            </a>
+            <p class="text-[18px] font-bold">
+                Ajukan Izin/Sakit
+            </p>
+            <div></div>
+        </div>
+
+        <!-- body -->
+        <div class="h-auto w-full box-border bg-[#f0f0f0] flex flex-col py-[15px] lg:flex-row lg:items-stretch">
+
+            <!-- body-image -->
+            <div class="relative w-full px-[15px] pb-[5px] box-border flex justify-center items-center lg:w-[40%] lg:pb-[15px] lg:items-center lg:self-stretch">
+                <div class="h-[100%] w-[100%] flex justify-center items-center rounded-md overflow-hidden box-border lg:h-[100%] lg:w-[100%]">
+                    <img src="eumm 1.png" alt="" class="w-full h-full object-cover">
+                </div>
+                <p class="absolute bottom-4 left-8 font-medium lg:bottom-12 lg:left-16">
+                    Ajukan izin atau sakit jika Anda <br>
+                    tidak dapat hadir ke sekolah
+                </p>
+            </div>
+
+            <!-- body-form -->
+            <div class="h-auto w-full px-[15px] pb-[15px] box-border flex lg:w-[60%] lg:h-full lg:pl-0 lg:pr-[15px] lg:justify-center">
+                <form action="" method="" class="h-auto w-full flex bg-[#ffffff] rounded-md flex-col p-[20px] gap-[18px] lg:justify-center">
+                    <div class="gap-[18px] flex flex-col lg:gap-[28px]">
+                        <p class="font-semibold text-[15px]">Jenis Pengajuan</p>
+                        <div class="flex h-auto w-full justify-between">
+                            <div class="flex gap-[8px]">
+                                <input type="radio" name="jenis-pengajuan" class="accent-pink-600">
+                                <p>izin</p>
+                            </div>
+                            <div class="flex gap-[8px]">
+                                <input type="radio" name="jenis-pengajuan" class="accent-pink-600">
+                                <p>sakit</p>
+                            </div>
+                            <div class=""></div>
+                        </div>
+                        <hr class="border-gray-600">
+                    </div>
+                    <div class="gap-[18px] flex flex-col lg:gap-[28px]">
+                        <p class="font-semibold text-[15px]">Tanggal</p>
+                        <div class="flex flex-col h-auto w-full gap-[8px]">
+                            <p>Tanggal Mulai</p>
+                            <input type="date" name="tgl-awal" class="h-[56px] w-full border-[1px] border-gray-900 rounded-md text-sm box-border px-[15px] text-[11px] transition ease-in-out hover:border-pink-700 hover:border-[2px]">
+                        </div>
+                        <div class="flex flex-col h-auto w-full gap-[8px]">
+                            <p>Tanggal Akhir</p>
+                            <input type="date" name="tgl-akir" class="h-[56px] w-full border-[1px] border-gray-900 rounded-md text-sm box-border px-[15px] text-[11px] transition ease-in-out hover:border-pink-700 hover:border-[2px]">
+                        </div>
+                        <div class="flex flex-col h-auto w-full gap-[8px]">
+                            <p>Alasan</p>
+                            <textarea name="alasan" class="h-[106px] w-full border-[1px] border-gray-900 rounded-md text-sm box-border p-[15px] text-[11px] transition ease-in-out hover:border-pink-700 hover:border-[2px]"></textarea>
+                        </div>
+                        <div class="flex flex-col h-auto w-full gap-[8px]">
+                            <p>Lampiran</p>
+                            <div class="flex w-full h-auto gap-[18px] items-center">
+                                <label for="lampiran-file" class="h-[56px] w-[30%] border-[1px] border-gray-900 rounded-md text-sm flex justify-center items-center p-0 transition ease-in-out hover:border-pink-700 hover:border-[2px]">
+                                Upload File
+                                </label>
+                                <p class="text-[13px]">JPG, PNG, SVG (max, 10mb)</p>
+                            </div>
+                            <input type="file" name="lampiran-file" id="lampiran-file" class="hidden">
+                        </div>
+                        <div class="flex flex-col h-auto w-full gap-[8px]">
+                            <button class="h-[56px] w-full bg-gradient-to-r from-[#002759] via-[#B388CB] to-[#FD77BE] text-white rounded-md text-sm font-bold box-border px-[15px] text-[11px] transition-all ease-in-out duration-100 hover:border-pink-700 hover:border-[2px]">Kirim Pengajuan</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
