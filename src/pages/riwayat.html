@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Riwayat Absensi</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+
+<body class="bg-[#f4f4f4] min-h-screen font-sans">
+
+  <!-- Container -->
+  <div class="max-w-3xl mx-auto px-4 py-6 sm:py-8">
+
+    <!-- Header -->
+    <div class="flex items-center justify-between mb-6 sm:mb-8">
+      <button class="text-xl sm:text-2xl text-black hover:opacity-70 transition-opacity">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-center flex-1">
+        Riwayat Absensi
+      </h1>
+
+      <!-- Spacer -->
+      <div class="w-8"></div>
+    </div>
+
+    <!-- Filter -->
+    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6">
+
+      <!-- Select -->
+      <div class="bg-white rounded-xl px-4 py-3 sm:px-5 sm:py-4 flex items-center justify-between w-full sm:w-48 md:w-56 shadow-sm border border-gray-50">
+        <span class="font-semibold text-gray-700">Semua</span>
+        <i class="fa-solid fa-chevron-down text-gray-500"></i>
+      </div>
+
+      <!-- Date -->
+      <div class="bg-white rounded-xl px-4 py-3 sm:px-5 sm:py-4 flex items-center justify-between flex-1 shadow-sm border border-gray-50">
+        <span class="font-semibold text-gray-700 text-xs xs:text-sm md:text-base">
+          01/05/2026 - 31/05/2026
+        </span>
+
+        <i class="fa-regular fa-calendar text-gray-500 text-xl"></i>
+      </div>
+
+    </div>
+
+    <!-- Card -->
+    <div class="bg-white rounded-2xl p-4 md:p-6 shadow-sm">
+
+      <!-- ITEM -->
+      <div class="flex items-center justify-between py-5 border-b border-gray-100">
+        <div>
+          <p class="text-gray-500 text-xs sm:text-sm">22 Mei 2026</p>
+          <h2 class="font-bold text-base sm:text-lg">Absen Masuk</h2>
+        </div>
+
+        <div class="flex items-center gap-3 sm:gap-5">
+          <span class="bg-green-100 text-green-600 text-[10px] sm:text-sm font-bold px-3 sm:px-5 py-1 rounded-full shrink-0">
+            Hadir
+          </span>
+
+          <p class="text-gray-500 font-semibold">06.15</p>
+
+          <i class="fa-solid fa-chevron-right text-gray-400"></i>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="flex items-center justify-between py-5 border-b border-gray-100">
+        <div>
+          <p class="text-gray-500 text-xs sm:text-sm">22 Mei 2026</p>
+          <h2 class="font-bold text-base sm:text-lg">Absen Pulang</h2>
+        </div>
+
+        <div class="flex items-center gap-3 sm:gap-5">
+          <span class="bg-green-100 text-green-600 text-[10px] sm:text-sm font-bold px-3 sm:px-5 py-1 rounded-full shrink-0">
+            Hadir
+          </span>
+
+          <p class="text-gray-500 font-semibold">15.00</p>
+
+          <i class="fa-solid fa-chevron-right text-gray-400"></i>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="flex items-center justify-between py-5 border-b border-gray-100">
+        <div>
+          <p class="text-gray-500 text-xs sm:text-sm">23 Mei 2026</p>
+          <h2 class="font-bold text-base sm:text-lg">Izin</h2>
+        </div>
+
+        <div class="flex items-center gap-3 sm:gap-5">
+          <span class="bg-purple-100 text-purple-600 text-[10px] sm:text-sm font-bold px-3 sm:px-5 py-1 rounded-full shrink-0">
+            Izin
+          </span>
+
+          <p class="text-gray-500 font-semibold">-</p>
+
+          <i class="fa-solid fa-chevron-right text-gray-400"></i>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="flex items-center justify-between py-5 border-b border-gray-100">
+        <div>
+          <p class="text-gray-500 text-xs sm:text-sm">24 Mei 2026</p>
+          <h2 class="font-bold text-base sm:text-lg">Absen Masuk</h2>
+        </div>
+
+        <div class="flex items-center gap-3 sm:gap-5">
+          <span class="bg-green-100 text-green-600 text-[10px] sm:text-sm font-bold px-3 sm:px-5 py-1 rounded-full shrink-0">
+            Hadir
+          </span>
+
+          <p class="text-gray-500 font-semibold">06.25</p>
+
+          <i class="fa-solid fa-chevron-right text-gray-400"></i>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="flex items-center justify-between py-5 border-b border-gray-100">
+        <div>
+          <p class="text-gray-500 text-xs sm:text-sm">24 Mei 2026</p>
+          <h2 class="font-bold text-base sm:text-lg">Absen Pulang</h2>
+        </div>
+
+        <div class="flex items-center gap-3 sm:gap-5">
+          <span class="bg-green-100 text-green-600 text-[10px] sm:text-sm font-bold px-3 sm:px-5 py-1 rounded-full shrink-0">
+            Hadir
+          </span>
+
+          <p class="text-gray-500 font-semibold">14.59</p>
+
+          <i class="fa-solid fa-chevron-right text-gray-400"></i>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="flex items-center justify-between py-5 border-b border-gray-100">
+        <div>
+          <p class="text-gray-500 text-xs sm:text-sm">25 Mei 2026</p>
+          <h2 class="font-bold text-base sm:text-lg">Absen Masuk</h2>
+        </div>
+
+        <div class="flex items-center gap-3 sm:gap-5">
+          <span class="bg-yellow-100 text-yellow-600 text-[10px] sm:text-sm font-bold px-3 sm:px-5 py-1 rounded-full shrink-0 text-center">
+            Lambat
+          </span>
+
+          <p class="text-gray-500 font-semibold">07.15</p>
+
+          <i class="fa-solid fa-chevron-right text-gray-400"></i>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="flex items-center justify-between py-5 border-b border-gray-100">
+        <div>
+          <p class="text-gray-500 text-xs sm:text-sm">25 Mei 2026</p>
+          <h2 class="font-bold text-base sm:text-lg">Absen Pulang</h2>
+        </div>
+
+        <div class="flex items-center gap-3 sm:gap-5">
+          <span class="bg-green-100 text-green-600 text-[10px] sm:text-sm font-bold px-3 sm:px-5 py-1 rounded-full shrink-0">
+            Hadir
+          </span>
+
+          <p class="text-gray-500 font-semibold">15.45</p>
+
+          <i class="fa-solid fa-chevron-right text-gray-400"></i>
+        </div>
+      </div>
+
+      <!-- ITEM -->
+      <div class="flex items-center justify-between py-5">
+        <div>
+          <p class="text-gray-500 text-xs sm:text-sm">26 Mei 2026</p>
+          <h2 class="font-bold text-base sm:text-lg">Sakit</h2>
+        </div>
+
+        <div class="flex items-center gap-3 sm:gap-5">
+          <span class="bg-indigo-100 text-indigo-600 text-[10px] sm:text-sm font-bold px-3 sm:px-5 py-1 rounded-full shrink-0">
+            Sakit
+          </span>
+
+          <p class="text-gray-500 font-semibold">-</p>
+
+          <i class="fa-solid fa-chevron-right text-gray-400"></i>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Pagination -->
+    <div class="flex justify-center items-center gap-2 sm:gap-3 mt-10 flex-wrap">
+
+      <button class="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-xl shadow-sm text-lg sm:text-xl border border-gray-50">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <button class="w-10 h-10 sm:w-12 sm:h-12 bg-pink-400 text-white rounded-xl shadow-sm font-bold text-sm sm:text-base">
+        1
+      </button>
+
+      <button class="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-xl shadow-sm font-bold text-sm sm:text-base border border-gray-50">
+        2
+      </button>
+
+      <button class="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-xl shadow-sm font-bold text-sm sm:text-base border border-gray-50">
+        3
+      </button>
+
+      <button class="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-xl shadow-sm font-bold text-sm sm:text-base border border-gray-50">
+        4
+      </button>
+
+      <button class="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-xl shadow-sm font-bold text-sm sm:text-base border border-gray-50">
+        ...
+      </button>
+
+      <button class="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-xl shadow-sm font-bold text-sm sm:text-base border border-gray-50">
+        10
+      </button>
+
+      <button class="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-xl shadow-sm text-lg sm:text-xl border border-gray-50">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
