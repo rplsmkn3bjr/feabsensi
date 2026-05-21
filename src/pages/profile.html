@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile</title>
+
+    <!-- TAILWIND -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <style>
+        body{
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+
+<main>
+    <div class="w-full bg-[#efebeb] min-h-screen shadow-2xl">
+
+        <!-- HEADER -->
+        <header class="w-full p-5 flex justify-between items-center bg-white shadow-sm sticky top-0 z-30">
+                <!-- LOGO -->
+                <div class="flex items-center gap-2">
+                    <img src="smk.logo.jpg" class="h-10 w-auto object-contain" alt="Logo SMK">
+                    
+                    <div>
+                        <h2 class="text-xs font-bold leading-tight">
+                            SMK NEGERI
+                            <br>
+                            3 BANJAR
+                        </h2>
+                    </div>
+
+                </div>
+
+                <!-- MENU -->
+                <div class="flex gap-4">
+
+                    <div class="text-center">
+                        <div class="text-[18px]"><i class="bi bi-clock-history"></i></div>
+                        <p class="text-[9px] mt-1">Riwayat</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="text-[18px]"><i class="bi bi-bell-fill" style="color: rgb(230, 192, 21);"></i></div>
+                        <p class="text-[9px] mt-1">Notifikasi</p>
+                    </div>
+
+                    <div class="text-center">
+
+                        <img
+                            src="https://i.pravatar.cc/40"
+                            class="w-7 h-7 rounded-full object-cover mx-auto"
+                            alt="">
+
+                        <p class="text-[9px] mt-1">
+                            Profile
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+        <!-- PROFILE CARD -->
+          <!-- BACK -->
+            <div class="relative flex items-center justify-center mt-6">
+                <i class="bi bi-arrow-left text-xl absolute left-0 ml-4"></i>
+
+                <h1 class="font-semibold text-sm">Profile</h1>
+            </div>
+        <div class="px-5 mt-6">
+
+            <div class="bg-gradient-to-r from-[#173b77] to-pink-400 rounded-2xl p-6 text-center text-white relative">
+
+                <!-- FOTO -->
+                <div class="relative w-fit mx-auto">
+                    <img src="https://i.pravatar.cc/100"
+                        class="w-20 h-20 rounded-full object-cover border-4 border-white">
+
+                    <!-- ICON EDIT -->
+                    <div class="absolute bottom-0 right-0 bg-white text-pink-500 rounded-full p-1 text-xs">
+                        <i class="bi bi-camera-fill"></i>
+                    </div>
+                </div>
+
+                <!-- NAMA -->
+                <h2 class="mt-4 font-bold text-lg">Dino Aryansah</h2>
+                <p class="text-sm opacity-90">Siswa</p>
+
+            </div>
+
+        </div>
+
+        <!-- INFORMASI PRIBADI -->
+        <div class="px-5 mt-5">
+
+            <div class="bg-white rounded-2xl p-5 shadow-sm">
+
+                <h3 class="font-semibold text-sm mb-4">Informasi Pribadi</h3>
+
+                <!-- ITEM -->
+                <div class="space-y-3 text-sm">
+
+                    <div class="flex justify-between border-b pb-2">
+                        <span class="text-gray-500">NIS</span>
+                        <span class="font-medium">10.2324.451</span>
+                    </div>
+
+                    <div class="flex justify-between border-b pb-2">
+                        <span class="text-gray-500">Email</span>
+                        <span class="font-medium">dinoaryansah12@gmail.com</span>
+                    </div>
+
+                    <div class="flex justify-between border-b pb-2">
+                        <span class="text-gray-500">No. Hp</span>
+                        <span class="font-medium">085700603245</span>
+                    </div>
+
+                    <div class="flex justify-between">
+                        <span class="text-gray-500">Kelas</span>
+                        <span class="font-medium">XI TKR 1</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- AKUN -->
+        <div class="px-5 mt-5">
+
+            <div class="bg-white rounded-2xl p-5 shadow-sm flex justify-between items-center cursor-pointer hover:bg-gray-50 transition-colors">
+
+                <span class="text-sm font-medium">Ubah Password</span>
+                <i class="bi bi-chevron-right"></i>
+
+            </div>
+
+        </div>
+
+        <!-- BUTTON -->
+        <div class="px-5 mt-6">
+
+            <button class="w-full py-3 rounded-xl text-white font-semibold bg-gradient-to-r from-[#173b77] to-pink-400 hover:opacity-90 hover:shadow-lg transition-all">
+                Simpan Perubahan
+            </button>
+
+            <button class="w-32 py-2 mt-4 rounded-md text-white font-semibold bg-red-600 hover:bg-red-700 transition-colors block mx-auto">
+                Keluar
+            </button>
+
+        </div>
+
+    </div>
+</main>
+
+</body>
+</html>
